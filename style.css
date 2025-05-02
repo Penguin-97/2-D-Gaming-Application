@@ -1,0 +1,39 @@
+/* style.css */
+
+/* Game area */
+#gameArea {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0f0f0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Player character */
+  #player {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(20, 238, 82);
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transition: all 0.1s ease-out;
+  }
+  @keyframes jump {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-100px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Trigger jump animation */
+  .jump {
+    animation: jump 0.5s ease-in-out;
+  }
+  
+    
